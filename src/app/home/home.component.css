@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 1090px;
+  height: 613px;
+  top: 342px;
+  gap: 0px;
+  opacity: 0px;
+  
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.consult-button {
+  background-color: #5A4FCF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consult-button:hover {
+  background-color: #4A3FB5;
+}
+
+.why-us, .services, .blogs {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features, .service-list, .blog-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature, .service, .blog-item {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.service-img{
+  width: 286px;
+  height: 340px;
+  top: 1649px;
+  left: 273px;
+  gap: 0px;
+  border-radius: 15px 0px 0px 0px;
+  opacity: 0px;
+  
+}
+
+.blog-img {
+   width: 89%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-img{
+  width: 68px;
+height: 73px;
+top: 1251px;
+left: 431px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+.view-all-button {
+  background-color: #4B2A63;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+.view-all-button:hover {
+  background-color: #4A3FB5;
+}
+
+.home {
+  background-color: white; 
+
+  
+}

@@ -1,0 +1,77 @@
+<app-header></app-header>
+<div class="home">
+  <section class="hero">
+    <img src="assets/hero.png" alt="Hero Image" class="hero-img">
+    <div class="hero-content">
+      <h1>Get personalised home interiors in just 50 days</h1>
+      <button class="consult-button">Speak with an Online Consultant</button>
+    </div>
+  </section>
+  <section class="why-us">
+    <h2>Why LAND Interiors</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="assets/feature1.png" alt="Feature 1" class="feature-img">
+        <p>50 days or we pay your rent</p>
+      </div>
+      <div class="feature">
+        <img src="assets/feature2.png" alt="Feature 2" class="feature-img">
+        <p>1500+ Happy Customers</p>
+      </div>
+      <div class="feature">
+        <img src="assets/feature3.png" alt="Feature 3" class="feature-img">
+        <p>300+ design experts</p>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <h2>What we do?</h2>
+    <div class="service-list">
+      <div class="service">
+        <img src="assets/service1.png" alt="Modular Kitchen" class="service-img">
+        <p>Modular Kitchen</p>
+      </div>
+      <div class="service">
+        <img src="assets/service2.png" alt="Bedroom" class="service-img">
+        <p>Bedroom</p>
+      </div>
+      <div class="service">
+        <img src="assets/service3.png" alt="Living Room" class="service-img">
+        <p>Living Room</p>
+      </div>
+      <div class="service">
+        <img src="assets/service4.png" alt="Home Office" class="service-img">
+        <p>Home Office</p>
+      </div>
+    </div>
+  </section>
+  <div class="rectangle">
+
+  <section class="blogs">
+    <h2>Blogs</h2>
+    <p-carousel 
+    [value]="products" 
+
+    [numVisible]="5" 
+    [numScroll]="5" 
+    [circular]="false" [responsiveOptions]="responsiveOptions" >
+    <ng-template let-product pTemplate="item">
+    <div class="blog-list">
+      
+      <div class="blog-item">
+        <img src="assets/{{ product.image }}" [alt]="product.name"class="blog-img">
+        <p> {{ product.name }}</p>
+        <p> {{ product.description }}</p>
+      </div>
+  
+    </div>
+  </ng-template>
+
+  </p-carousel>
+
+    <button class="view-all-button">View all</button>
+  </section>
+  </div>
+  <app-footer></app-footer>
+
+</div>
